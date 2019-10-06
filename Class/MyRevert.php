@@ -12,6 +12,10 @@ class MyRevert
     */
     protected $fullName = [];
 
+    protected $lastName;
+
+    protected firstName;
+
     /* 
     * MyRevert constructor
     * @parma string $name
@@ -53,6 +57,16 @@ class MyRevert
     public function returnMyFirstandLastName() : array
     {
         return $this->fullName;
+    }
+
+    public function getFirstName()
+    {
+        return $this->returnMyFirstandLastName()[0];
+    }
+
+    public function getLastName()
+    {
+        return $this->returnMyFirstandLastName()[1];
     }
 
     
