@@ -5,4 +5,6 @@ require('Class/MyRevert.php');
 
 $class = new MyRevert('Alan Walker');
 
-echo 'Hello Mr' . $class->getName();
+$class->seperateName();
+
+echo 'Hello, FirstName: ' . $class->returnMyFirstandLastName()[0] . ' and Lastname: ' . $class->returnMyFirstandLastName()[1];
