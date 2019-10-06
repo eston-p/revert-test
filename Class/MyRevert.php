@@ -55,21 +55,5 @@ class MyRevert
         return $this->fullName;
     }
 
-    /* 
-    * @returns string
-    */
-    public function getFirstName()
-    {
-        return $this->returnMyFirstandLastName()[0];
-    }
-
-    /* 
-    * @returns string
-    */
-    public function getLastName()
-    {
-        return $this->returnMyFirstandLastName()[1];
-    }
-
     
 }
